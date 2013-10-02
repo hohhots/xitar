@@ -1,0 +1,9 @@
+root { 
+    display: block;
+}
+
+body {
+    margin: 10px;
+    background-color: #eee;
+}
+

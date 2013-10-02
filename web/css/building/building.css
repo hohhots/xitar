@@ -1,0 +1,203 @@
+body{
+    padding:0 10px 0 130px;
+}
+
+#exit{
+    float:right;
+    clear:right;
+    margin:5px 0 8px 30px;
+    border:1px solid #999;
+    padding-bottom: 3px;
+    height:16px;
+    width:22px;
+    background-color:#fff;
+    text-align:center;
+    color:#a00;
+}
+
+#exit:hover{
+    background-color:#a00;
+    color:#fff;
+    cursor:pointer;
+}
+
+#room_table{
+    position:absolute;
+    left:10px;
+    border:0;
+    width:131px;
+    padding:0;
+    background-color: #ddd;
+    border:1px #4682b4 solid;
+}
+
+#id{
+    font-weight:bold;
+    color:#900;
+}
+
+.room_num{
+    width:30px;
+    height:45px;
+    background-color: #d4d0c8;
+    text-align:center;
+    font-size: 20px;
+}
+
+.room_num_over{
+    cursor:pointer;
+    font-weight:bold;
+    color:#fff;
+    background-color: #a00;
+}
+
+.room_num_click{
+    cursor:default;
+}
+
+.players{
+    width:100px;
+    padding-right:10px;
+    text-align:right;
+    font-size: 14px;
+    background: url(../image/room.png) no-repeat;
+}
+
+.players_over{
+    cursor:pointer;
+    color:#fff;
+    background: url(../image/roomover.png) no-repeat;
+}
+
+.players_click{
+    cursor:default;
+}
+
+div#desks{
+    width:100%;
+    padding:5px;
+    background-color: #fff;
+    border:1px #4682b4 solid;
+}
+
+div.desk{
+    margin: 25px 10px 10px 10px;
+    border:1px #fff solid;
+    float:left;
+    padding:5px;
+    vertical-align:middle;
+    text-align:center;
+    border:1px #696 solid;
+    background-color:#006e2e;
+}
+
+div.desk_over{
+    cursor:pointer;
+    background-color:#066;
+}
+
+div.desk_unclick{
+    background-color: #066;
+}
+
+div.chair{
+    margin:0 auto 0 auto;
+    border:1px #006e2e solid;
+    clear:both;
+    width:60px;
+    height:15px;
+    padding:1px;
+    font-size: 14px;
+}
+
+div.chair_selectMy{
+    border:1px #ccc solid;
+    color: #cc0;
+}
+
+div.chair_selectOther{
+    border:1px #006e2e solid;
+    color: #cc0;
+}
+
+div.chair_unselectOther{
+    border:1px #066 solid;
+    color: #cc0;
+}
+
+div>.table{ /*for firefox*/
+            display:table;
+            position:static;
+            color:#ccc;
+}
+
+div.table{ /*for IE*/
+           position:relative;
+           margin:2px auto 2px auto;
+           width:80px;
+           height:40px;
+           color:#ccc;
+}
+
+div.table_selected{
+    background-color:#006b00;
+}
+
+div.table_over{
+    cursor:pointer;
+    background-color:#f99;
+}
+
+div.table div{ /*for IE*/
+               position:absolute;
+               top:50%;
+               border:0 #f00 solid;
+               font-size: 20px;
+               color:#999;
+}
+
+div.table>div{ /*for firefox*/
+               position:static;
+               display:table-cell;
+               vertical-align:middle;
+}
+
+div.table div div{
+    clear:both;
+    position:relative;
+    top:-50%;
+    left:-50%;
+}
+
+div.table>div>div{
+    left:0;
+}
+
+div#confirm{
+    position:absolute;
+    text-align:center;
+}
+
+div.agree{
+    margin:0 0 0 7px;
+    float:left;
+    width:25px;
+    height:15px;
+    background: #ccc url(../image/add.gif) no-repeat;
+    font-size:1px;
+}
+
+div.disagree{
+    margin:0 7px 0 0;
+    float:right;
+    width:25px;
+    height:15px;
+    background: #ccc  url(../image/delete.gif) no-repeat;
+    font-size:1px;
+}
+
+div.agree_over,
+div.disagree_over{
+    cursor:pointer;
+    background-color:#eee;
+}
